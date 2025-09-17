@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<body>
+
+	<h2>Simple Calculator</h2>
+	<p id="demo"></p>
+
+	<form>
+		<label>Enter your first number:</label>
+		<input type="text" id="fnum" name="fnum">
+		<br><br>
+
+		<label>Enter Your second number:</label>
+		<input type="text" id="snum" name="snum">
+		<br><br>
+
+		<label for="operator">Choose an operator:</label>
+		<select id="operator" name="operator">
+		    <option value="add">Add</option>
+		    <option value="sub">Subtract</option>
+		    <option value="mul">Multiply</option>
+		    <option value="div">Divide</option>
+		</select>
+		<br><br>
+
+		<button type="button" onclick="calculate()">Calculate</button>
+	</form>
+
+	<script>
+		
+		function add(a, b) {
+			return a + b;
+		}
+
+		function sub(a, b) {
+			return a - b;
+		}
+
+		function mul(a, b) {
+			return a * b;
+		}
+
+		function divi(a, b) {
+			if (b === 0) {
+				return "Error: Division by zero!";
+			}
+			return a / b;
+		}
+
+		function printResult(result) {
+			document.getElementById("demo").innerHTML = "Result = " + result;
+		}
+
+		
+		function calculate() {
+			let a = parseFloat(document.getElementById("fnum").value);
+			let b = parseFloat(document.getElementById("snum").value);
+			let op = document.getElementById("operator").value;
+			let result;
+
+			switch (op) {
+				case "add":
+					result = add(a, b);
+					break;
+				case "sub":
+					result = sub(a, b);
+					break;
+				case "mul":
+					result = mul(a, b);
+					break;
+				case "div":
+					result = divi(a, b);
+					break;
+				default:
+					result = "Invalid operation!";
+			}
+
+			
+			printResult(result);
+		}
+	</script>
+
+</body>
+</html>
