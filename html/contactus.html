@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact us</title>
+
+	<style>
+		form {
+      background-color: lightpink;
+      padding: 25px ;
+      border-radius: 20px;
+      max-width: 500px;
+    }
+    button{
+    	background-color: blue;
+    	width: 80px;
+    	height: 40px;
+    	color: white;
+    	border: none;
+    	border-radius: 5px;
+    	button:hover;
+    }
+
+    button:hover{
+    	background-color: green;
+    }
+
+	</style>
+</head>
+<body style="background-color: ivory;">
+	<center>
+<h1 style="background-color: grey;">TIMES OF INDIA</h1>
+
+
+
+<nav style=" background-color: lightgrey;  height: 50px; " ><br>
+	<a href="newsmttext.html">News</a>
+	<a href="details.html">News Details</a>
+	<a href="aboutus.html">About us</a>
+	<a href="contactus.html">Contact us</a>
+</nav>
+
+<h1>CONTACT FORM</h1><br><br>
+<form style="border-radius: 5px; border: 2px;">
+
+	<label for="name">Enter your name:</label>
+	<input type="text" name="name" id="name" required><br><br><br><br>
+
+	<label for="num">Enter your number:</label>
+	<input type="text" name="num" id="num" maxlength="10" required><br><br><br><br>
+
+	<label for="des">description:</label>
+<textarea id="des" name="des" required></textarea><br><br><br><br>
+
+
+	<label for="com">Type of communication:</label>
+	<select id="com" name="com" required>
+		<option value="sales">sales</option>
+		<option value="service">service</option>
+		<option value="enquiry">Enquiry</option>
+		<option value="advertisement" selected >advertisement</option>
+		<option value="complaint">complaint</option>
+	</select><br><br><br><br>
+
+	<button type="submit">Submit</button>
+
+
+</form>
+</center>
+</body>
+</html>

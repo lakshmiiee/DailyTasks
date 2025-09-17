@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Replace "Mashupstack", with "Mashup", in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Visit Mashupstack!.</p>
+<p id="demo1"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Mashupstack","Mashup");
+  document.getElementById("demo").innerHTML = txt;
+}
+
+//replacing only one
+
+var str1= "Hello im laksmi and im laksmi"
+document.getElementById("demo1").innerHTML=str1.replace("laksmi","lakshmi");
+
+//replacing all
+document.getElementById("demo3").innerHTML=str1.replace(/laksmi/gi,"Lakshmi")
+
+//conversion
+document.getElementById("demo4").innerHTML=str1.toLowerCase()
+document.getElementById("demo5").innerHTML=str1.toUpperCase()
+
+//concat with space
+var str2=str1.concat(" ",str1);
+document.getElementById("demo6").innerHTML=str2;
+
+//concat without space
+var str2=str1.concat("",str1);
+document.getElementById("demo7").innerHTML=str2;
+
+//trim
+var str3="           Removes extra space    "
+document.getElementById("demo8").innerHTML=str3.trim();
+
+//string char extraction
+document.getElementById("demo9").innerHTML = str1.charAt(0);
+document.getElementById("demo10").innerHTML = str1.charCodeAt(3);
+document.getElementById("demo11").innerHTML = str1[1];
+
+//string to array with space and withou
+document.getElementById("demo12").innerHTML=str1.split(" ");
+document.getElementById("demo13").innerHTML=str1.split("");
+
+//separtae
+var arr = str1.split("");
+var text = "";
+var i;
+for (i = 0; i < arr.length; i++) {
+  text += arr[i] + "<br>"
+}
+document.getElementById("demo14").innerHTML = text;
+
+//alert length
+var txt = "Hello World!";
+var x = txt.length;
+alert(x);
+
+
+
+</script>
+
+</body>
+</html>

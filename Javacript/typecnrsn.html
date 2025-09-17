@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		type conversion
+	</title>
+</head>
+<body>
+
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<p id="demo3"></p>
+		<p id="demo4"></p>
+		<p id="demo5"></p>
+		<p id="demo6"></p>
+		<p id="demo7"></p>
+		<p id="demo8"></p>
+		<p id="demo9"></p>
+		<p id="demo10"></p>
+		<p id="demo11"></p>
+		<p id="demo12"></p>
+		<p id="demo13"></p>
+		<p id="demo14"></p>
+
+	<script type="text/javascript" language="javascript">
+		//implicit conversion
+
+		var_1=document.getElementById("demo1").innerHTML="5" + " 1"  ;
+		document.getElementById("demo2").innerHTML=typeof(var_1);
+		var_2=document.getElementById("demo3").innerHTML=5 +  1 ;
+		document.getElementById("demo4").innerHTML=typeof(var_2);
+		var_3=document.getElementById("demo5").innerHTML=5 +  null ;
+		document.getElementById("demo6").innerHTML=typeof(var_3);
+		var_4=document.getElementById("demo7").innerHTML="5" +  null ;
+		document.getElementById("demo8").innerHTML=typeof(var_4);
+		var_5=document.getElementById("demo9").innerHTML="5" - "2" ;
+		document.getElementById("demo10").innerHTML=typeof(var_5);
+		var_6=document.getElementById("demo11").innerHTML= "Hello" * "JS" ;
+		document.getElementById("demo12").innerHTML=typeof(var_6);
+		var_7=document.getElementById("demo13").innerHTML=5 +  undefined ;
+		document.getElementById("demo14").innerHTML=typeof(var_7);
+
+		//explicit conversion
+		//to number
+		var1=Number('890');
+		console.log(var1,typeof(var1));
+
+		var2=Number('null');
+		console.log(var2,typeof(var2));
+
+		var3=Number('Hellooo');
+		console.log(var3,typeof(var3));
+
+		//to int and float
+		console.log(parseInt(55.50));
+		console.log(parseFloat(55.50));
+
+		// to string
+		console.log(String(3 + 7));
+		console.log((500).toString());
+
+		// to boolean
+		console.log(Boolean(" "));
+		console.log(Boolean(null ));
+
+
+		
+		
+
+
+
+	</script>
+
+</body>
+</html>

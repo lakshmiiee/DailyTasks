@@ -1,0 +1,25 @@
+header img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%; 
+      margin-right: 10px;
+    }
+
+    .main-heading {
+      font-family: cursive;
+      font-size: 60px;
+      color: yellow;
+      margin: 40px 0 10px;
+      text-shadow: 2px 2px 5px orange;  
+    }
+
+    .main-heading span {
+      color: orange;
+    }
+
+    .main-image {
+      width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(255, 165, 0, 0.6);
+      margin-top: 20px;
+    }

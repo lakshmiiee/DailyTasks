@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>shapes</title>
+	<style>
+		body {
+			background-color: lightyellow;
+			font-family: Arial, sans-serif;
+		}
+
+		.center-text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		p.a, p.b, p.c {
+			margin: 20px auto;
+		}
+
+		p.a {
+			border: 2px solid black;
+			height: 150px;
+			width: 150px;
+			border-radius: 100%;
+			background-color: lightblue;
+		}
+
+		p.b {
+			border: 2px solid black;
+			height: 150px;
+			width: 150px;
+			background-color: lightpink;
+		}
+
+		p.c {
+			border: 2px solid black;
+			height: 150px;
+			width: 250px;
+			background-color: lightgreen;
+		}
+
+		.triangle {
+			width: 200px;
+			height: 170px;
+			background-color: grey;
+			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			margin: 20px auto;
+			color: white;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p class="a center-text">Circle</p>
+		<p class="b center-text">Square</p>
+		<p class="c center-text">Rectangle</p>
+		<div class="triangle">Triangle</div>
+	</center>
+</body>
+</html>

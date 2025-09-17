@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		object q1
+	</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+	let book={
+		title:'The Alchemist',
+		author:'Paulo  Coelho',
+		year:1988,
+
+		getSummary: function(){ console.log("The book "+ this.title+ " was written by "+ this.author+" in "+this.year);}
+	};
+
+	let book1={
+		title:'The Revolution',
+		author:'xxxxx',
+		year:1988,
+
+		getSummary: function(){ console.log("The book "+ this.title+ " was written by "+ this.author+" in "+this.year);}
+	};
+	
+	
+
+	function PrintBookSummary(book0){
+
+		book0.getSummary();
+
+
+
+	}
+	PrintBookSummary(book);
+	PrintBookSummary(book1)
+
+	
+</script>
+</body>
+</html>

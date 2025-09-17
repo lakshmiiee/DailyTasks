@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ERC Login/Register</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #2d2f36;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-bar {
+      width: 1300px;
+      height: 40px;
+      background-color: white; 
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      margin-top: 50px;
+    }
+
+    .circle {
+      height: 12px;
+      width: 12px;
+      background-color: red;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .container {
+      display: flex;
+      height: 600px;
+      width: 1300px;
+      background-color: #fff;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .left-panel {
+      flex: 1.3;
+      background-color: #0e121a;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 30px;
+    }
+
+    .left-panel h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .subheading {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .register-btn {
+      background-color: #00c58e;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 3px;
+      width: 200px;
+    }
+
+    .right-panel {
+      flex: 0.7;
+      background-color: #00c58e;
+      padding: 40px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right-panel h2 {
+      margin-bottom: 30px;
+      font-size: 22px;
+    }
+
+    .right-panel form input {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 3px;
+      background-color: #00c58e;
+      color: white;
+      font-size: 14px;
+      border-bottom: 1px solid white;
+    }
+
+    .right-panel form input::placeholder {
+      color: #f0f0f0;
+    }
+
+    .login-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      
+    }
+
+    .login-btn {
+      background-color: #fff;
+      color: #00c58e;
+      border: none;
+      padding: 10px 24px;
+      font-weight: bold;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .forgot {
+      color: #ffffff;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+
+    .footer {
+      
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+      color: #999;
+      font-size: 14px;
+
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="nav-bar">
+    <div  class="circle"></div>
+    <div style="background-color: yellow;" class="circle"></div>
+    <div style="background-color: green" class="circle"></div>
+  </div>
+
+  
+  <div class="container">
+    <div class="left-panel">
+      <img src="C:\Users\laksh\Documents\sublime\ERC logo.png" alt="ERC Logo" class="logo" /><br><br>
+      <h1>Welcome</h1>
+      <p class="subheading">Register for an ERC account here.</p>
+      <p class="description">
+  Register for a free ERC account here and get access to the webshop, academy, and MyERC membership portal. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec elementum lacus. Vivamus luctus nulla at nisl hendrerit, vel cursus lorem feugiat. Integer feugiat, lacus nec malesuada suscipit, velit lorem convallis massa, sed laoreet orci nulla vitae sapien. 
+  Cras efficitur orci ut nulla accumsan, at porttitor nunc finibus. Curabitur rhoncus odio ut purus lobortis, sed sodales justo vestibulum. Quisque nec laoreet sapien, in laoreet libero.
+</p>
+      <button class="register-btn">REGISTER HERE</button><br><br>
+      <div class="footer">
+        <span>CHOOSE LANGUAGE</span>
+        <span>HELP CENTER</span>
+        <span>ERC WEBSITE</span>
+        <span>ERC WEBSHOP</span>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h2>Or login to your account</h2>
+      <form>
+        <input type="email" placeholder="Your email" required />
+        <input type="password" placeholder="Password" required />
+        <div class="login-actions">
+          <button type="submit" class="login-btn">LOGIN</button>
+          <a href="#" class="forgot">Forgot password?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

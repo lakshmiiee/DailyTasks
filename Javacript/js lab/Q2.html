@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>validation</title>
+</head>
+<body>
+
+	<form>
+		<label>Enter your name:</label>
+		<input type="text" id="name" name="name">
+		<br><br>
+		<label>Enter your email:</label>
+		<input type="email" id="email "name="email">
+		<br><br>
+		<label>Enter your phone number:</label>
+		<input type="text" id="num" name="num">
+		<br><br>
+		<label>Enter your password:</label>
+		<input type="password" id="pas" name="pas">
+		<br><br>
+		<button type="button" id="btn" onclick="">Signup</button>
+
+	</form>
+<script>
+
+/*Form Validation
+Create a signup for having name,email,phone and password fields
+1. All the fields are required
+2. Name should be minimum 3 character in length and should not contain any numbers
+3. Email should be in valid format
+4. Phone should be minimum 10 numbers in length
+5. Password should be minimum 6 character in length
+Note: don't use html validations
+ */
+
+	function signup(){
+
+	let name=document.getElementById("name").innerHTML.value.trim();
+	let email=document.getElementById("email").innerHTML.value.trim();
+	let num=document.getElementById("num").innerHTML.value.trim();
+	let pas=document.getElementById("pas").innerHTML.value.trim();
+
+	
+
+	}
+	
+
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lottery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="text-center p-4">
+
+  <h3>Lottery Numbers</h3>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+
+  <button type="button" class="btn btn-primary" onclick="find()" data-toggle="modal" data-target="#resultModal">
+    Find Winner
+  </button>
+
+  
+  <div class="modal fade" id="resultModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Winner</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p id="winnerNumber" ></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <h4 class="mt-4">Winner :</h4>
+  <p id="demo2" style="font-size: 22px; font-weight: bold; color: red;"></p>
+
+
+  <script>
+    var arr1 = [12345, 67890, 13579, 24680, 11111];
+    document.getElementById("demo").innerHTML = arr1.join(", ");
+
+    function find() {
+      var index = Math.floor(Math.random() * arr1.length);
+      var winner = arr1[index];
+      document.getElementById("winnerNumber").innerHTML = " Winning Number: " + winner;
+      console.log(winner);
+      document.getElementById("demo2").innerHTML = " Winning Number: " + winner;
+   
+    }
+  </script>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

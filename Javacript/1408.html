@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 6</title>
+</head>
+<body>
+    <h3>All Products:</h3>
+    <p id="all"></p>
+
+    <h3>Products with Price > 50:</h3>
+    <p id="filtered"></p>
+
+    <h3>Updated Products List </h3>
+    <p id="updated"></p>
+
+    <script>
+        // Products and Prices
+        var product = ["Apple", "Orange", "Pineapple", "Grapes", "Banana"];
+        var price = [200, 100, 50, 120, 40];
+
+        // Merge into objects {Product, Price}
+        var merged = product.map(function(item, index) {
+            return { Product: item, Price: price[index] };
+        });
+
+        // Reusable function to display products
+        function displayProducts(arr, elementId) {
+            let output = "";
+            arr.forEach(function(value) {
+                output += `Product: ${value.Product} - Price: ${value.Price}<br>`;
+            });
+            document.getElementById(elementId).innerHTML = output;
+        }
+
+        // 1. Display all products
+        displayProducts(merged, "all");
+
+        // 2. Display only products with Price > 50
+        displayProducts(merged.filter(v => v.Price > 50), "filtered");
+
+        // 3. Add new product and show updated list
+        merged.push({ Product: "Watermelon", Price: 80 });
+        displayProducts(merged, "updated");
+    </script>
+</body>
+</html>

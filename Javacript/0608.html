@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ques 2</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+
+	let userProfile = {
+	username: " CoolUser99 ",
+	bio: " I LOVE coding! JavaScript is Great!!! ",
+
+	cleanData: function () {
+		
+		let cleanedUsername = this.username.trim().toLowerCase();
+		let cleanedBio = this.bio.trim().toLowerCase().replace(/javascript/gi, "JS");
+		let bioLength = cleanedBio.length;
+
+		
+
+		
+		return {
+			username: cleanedUsername,
+			bio: cleanedBio,
+			bioLength: bioLength
+		};
+	}
+};
+
+let cleaned = userProfile.cleanData();
+console.log(cleaned);
+
+
+	document.getElementById("demo").innerHTML =
+		"<strong>Cleaned Username:</strong> " + cleaned.username + "<br>" +
+		"<strong>Cleaned Bio:</strong> " + cleaned.bio + "<br>" +
+		"<strong>Bio Length:</strong> " + cleaned.bioLength;
+
+</script>
+
+</body>
+</html>

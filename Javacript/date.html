@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>date</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+	<p id="demo12 "></p>
+	<p id="demo13"></p>
+	<p id="demo14"></p>
+	<p id="demo15"></p>
+
+		<script language="javascript" type="text/javascript">
+			document.getElementById("demo").innerHTML=new Date();
+
+			document.getElementById("demo1").innerHTML=new Date(0);
+			document.getElementById("demo2").innerHTML=new Date(156897530000000);
+			document.getElementById("demo3").innerHTML=new Date(-1568975300);
+			document.getElementById("demo4").innerHTML=new Date(" july 9, 2025, 10:34:00");
+			document.getElementById("demo5").innerHTML=new Date(2025,7,18,10,20,39,40);
+			document.getElementById("demo6").innerHTML=new Date(2025,7,10);
+			document.getElementById("demo7").innerHTML=new Date(9,9,9);
+			document.getElementById("demo8").innerHTML=new Date().toString();
+			document.getElementById("demo9").innerHTML=new Date().toUTCString();
+			document.getElementById("demo10").innerHTML=new Date().toDateString();
+			document.getElementById("demo11").innerHTML=new Date().getFullYear();
+
+			
+			//  var d = new Date();
+			//  var n = d.getTimezoneOffset();
+			 // document.getElementById("demo12").innerHTML = n;
+			
+
+		</script>
+</body>
+</html>

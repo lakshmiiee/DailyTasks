@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task4</title>
+</head>
+<body>
+	<h2>Delivery tracking</h2>
+	<button type="button" onclick="orderItem()"> click me </button>
+	<script type="text/javascript" language="javascript">
+
+
+		let order={
+			itemName:"Laptop",
+			isDelivered:true,
+			daysSinceDelivery:7
+
+
+		}
+
+function orderItem(){
+
+				
+				var status = (order.isDelivered == true && order.daysSinceDelivery >= 7) ? "Eligible for Return": "Return Period Expired";
+				alert(status);
+			}
+			let x= "itemName" in order;
+			console.log(x);
+
+			delete order.daysSinceDelivery;
+			console.log(order);
+
+		
+	/*	Create an object named order with the following details: itemName, isDelivered, and daysSinceDelivery.
+
+
+When the button is clicked, check if:
+
+
+the item has been delivered (isDelivered is true)
+
+
+and the item was delivered within the last 7 days
+
+
+If both are true, display “Eligible for Return”, otherwise display “Return Period Expired” — without using if-else.
+
+
+Also:
+
+
+Check if the itemName property exists in the object.
+
+
+Then remove the daysSinceDelivery property using a suitable operator.*/
+
+		
+	</script>
+
+	
+
+
+</body>
+</html>

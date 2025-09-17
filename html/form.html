@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <div class="border rounded p-4 shadow bg-white mx-auto" style="max-width: 500px;">
+      <h3 class="text-center mb-4">Registration Form</h3>
+
+      <div class="mb-3">
+        <label for="usr" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="usr" placeholder="Enter username">
+      </div>
+
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+
+      <div class="mb-3">
+        <label for="comment" class="form-label">Comment:</label>
+        <textarea class="form-control" id="comment" rows="3" placeholder="Your comment"></textarea>
+      </div>
+
+      <div class="mb-3">
+  <label class="form-label d-block mb-2">Checkbox Options:</label>
+  
+  <div class="form-check form-check-inline">
+    <input type="checkbox" class="form-check-input" id="opt1">
+    <label class="form-check-label" for="opt1">Option 1</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input type="checkbox" class="form-check-input" id="opt2">
+    <label class="form-check-label" for="opt2">Option 2</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input type="checkbox" class="form-check-input" id="opt3" disabled>
+    <label class="form-check-label" for="opt3">Option 3 (Disabled)</label>
+  </div>
+</div>
+
+      <div class="mb-3">
+        <label class="form-label d-block">Radio Options:</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="optradio" id="radio1">
+          <label class="form-check-label" for="radio1">Option 1</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="optradio" id="radio2">
+          <label class="form-check-label" for="radio2">Option 2</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="optradio" id="radio3" disabled>
+          <label class="form-check-label" for="radio3">Option 3 (Disabled)</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="sel1" class="form-label">Select one:</label>
+        <select class="form-control" id="sel1">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>Bootstrap</option>
+          <option>JavaScript</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Select a value:</label>
+        <input type="range" class="form-range" name="range">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Upload a file:</label>
+        <input type="file" class="form-control" name="file">
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

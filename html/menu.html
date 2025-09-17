@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Food Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffbe7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d35400;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .item-content {
+      padding: 15px;
+    }
+
+    .item h3 {
+      margin: 0 0 10px;
+      color: #2e4053;
+    }
+
+    .item p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #d35400;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Food Menu</h1>
+
+  <div class="menu">
+    <div class="item">
+      <img src="" alt="Biriyani">
+      <div class="item-content">
+        <h3>Chicken Biriyani</h3>
+        <p>Spicy and flavorful traditional biriyani served with raita.</p>
+        <div class="price">₹180</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="" alt="Dosa">
+      <div class="item-content">
+        <h3>Masala Dosa</h3>
+        <p>Crispy dosa filled with spicy potato masala, served with chutney.</p>
+        <div class="price">₹60</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="" alt="Paneer Butter Masala">
+      <div class="item-content">
+        <h3>Paneer Butter Masala</h3>
+        <p>Soft paneer cubes in rich, buttery tomato gravy.</p>
+        <div class="price">₹150</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="" alt="Fried Rice">
+      <div class="item-content">
+        <h3>Veg Fried Rice</h3>
+        <p>Fragrant basmati rice tossed with veggies and sauces.</p>
+        <div class="price">₹100</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="" alt="Ice Cream">
+      <div class="item-content">
+        <h3>Vanilla Ice Cream</h3>
+        <p>Classic vanilla ice cream scoop with nuts and syrup.</p>
+        <div class="price">₹40</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

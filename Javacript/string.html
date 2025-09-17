@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="deemo3"></p>
+
+<script>
+	document.write("This is \"javascript strings\" ")
+console.log("He said  'Javascript is Awesome!'");
+console.log('He said "Javascript is very easy." ');
+console.log(`This is the first line
+This is the second line`);
+
+var a = 5;
+var b = 10;
+console.log(`The sum of ${a} and ${b} is ${a+b}`);
+
+document.getElementById("demo").innerHTML = "Mashup" +
+"Stack! <br>";
+
+var aa=`Lakshmi "<br>" `;
+var bb=new String(`Lakshmi "<br>"`);
+var cc=new String(`Lakshmi "<br>"`);
+document.write(aa);
+document.write(bb);
+
+document.write(aa==bb ); 
+document.write(aa===bb );
+document.write(bb===cc );
+
+ document.getElementById("demo1").innerHTML=aa.length;
+
+ var str="Hellooo this is me this"
+ var find=str.lastIndexOf("why");
+ document.write(find)
+
+
+
+var position = " Mashupstack locate where 'Mashupstack' occurs!";
+var pos = position.search("Mashupstack" );
+document.getElementById("demo3").innerHTML = pos;
+
+</script>
+
+</body>
+</html>

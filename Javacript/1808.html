@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task date</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+<script language="javascript" type="text/javascript">
+	/*
+
+	You are building a simple birthday tracker for your friends. You need to:
+Create an object named friend with properties: name and birthDate (in the format YYYY-MM-DD).
+
+
+Write a function getBirthdayDetails that:
+
+
+Accepts the friend object as input,
+
+
+Converts the birthDate string into a date,
+
+
+Extracts and prints the year, month name, and day of the month,
+
+
+Calculates how many years old the friend is as of today.
+
+
+Display the result in the format:
+ "John was born on 5 July, 1999 and is 25 years old."
+
+	 */
+//1
+	let friend={
+		name:"Arya",
+		birthDate:"2002-05-07"
+	}
+//2
+	function getBirthdayDetails(friend){
+		let frnd=new Date(friend.birthDate);
+		document.getElementById("demo").innerHTML="Aryas bday is on "+ frnd;
+//3
+		let year=frnd.getFullYear();
+		document.getElementById("demo1").innerHTML="She was born in the year "+year;
+//4
+		var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+		document.getElementById("demo2").innerHTML="She was born in "+ months[frnd.getMonth()]+" month";
+//5
+		var day=frnd.getDate();
+		document.getElementById("demo3").innerHTML="The date of birth is on "+day;
+//6
+		let today=new Date();
+		let age=today.getFullYear() - year;
+		let bmnth=today.getMonth()- frnd.getMonth();
+
+		if( bmnth < 0){
+			age--;
+		}
+
+		if(bmnth===0 && today.getDate()<frnd.getDate()){
+			age--;
+		}
+		document.getElementById("demo4").innerHTML="Today her age is "+age;
+//7
+		document.getElementById("demo5").innerHTML=`Arya was born on ${day} ${months[frnd.getMonth()]}, ${year} and is ${age} years old.`
+
+	}
+	getBirthdayDetails(friend);
+
+//3
+	
+
+
+</script>
+</body>
+</html>

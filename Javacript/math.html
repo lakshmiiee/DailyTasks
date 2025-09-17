@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>math objects</title>
+</head>
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
+<p id="demo16"></p>
+<p id="demo17"></p>
+<p id="demo18"></p>
+<script type="text/javascript" language="javascript">
+
+//Math.PI
+let r=5;
+let PI=Math.PI;
+document.getElementById("demo1").innerHTML="Circumference of the circle is + 2*PI*R where R is 5 = "+ 2 * PI * r; 
+
+//Math.round
+document.getElementById("demo2").innerHTML="Rounding of 8.6 =" + Math.round(8.6)+"<br> "+ " Rounding of 8.1 = " +  Math.round(8.1);
+
+//Math.pow
+document.getElementById("demo4").innerHTML="Power of 2^2 = " + Math.pow(2,2)+" <br>"+" Power of 3^3 =" +Math.pow(3,3);
+
+//Math.sqrt
+document.getElementById("demo5").innerHTML="Square root  of 16 is = " + Math.sqrt(16)+" <br>"
+
+//Math.abs
+document.getElementById("demo6").innerHTML = "Absolute value of -7.4 =" +Math.abs(-7.4)+"<br";
+
+//Math.ceil
+document.getElementById("demo7").innerHTML = "Celing of 8.6 =" + Math.ceil(8.6)+"<br> "+ " Celing of 8.1 = " +  Math.ceil(8.1);
+
+//Math.floor
+document.getElementById("demo8").innerHTML = " Floored value of 9.1 = " + Math.floor(9.1)+"<br>";
+
+//Math.sin
+document.getElementById("demo9").innerHTML = 
+"The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180)+"<br>";
+
+//Math.cos
+document.getElementById("demo10").innerHTML = 
+"The cosine value of 0 degrees is " + Math.cos(0 * Math.PI / 180);
+
+//Math.min
+document.getElementById("demo11").innerHTML =
+Math.min(0, 15, 340, 260, -68, 200);
+
+//Math.max
+document.getElementById("demo12").innerHTML =
+Math.max(0, 15, 340, 260, -68, 200);
+
+//Math.random between 0 and 1
+document.getElementById("demo13").innerHTML = Math.random();
+
+//random between 0 and 1001
+document.getElementById("demo14").innerHTML=Math.floor(Math.random() * 1000) + 1;
+
+//between two numbers 5 not included
+document.getElementById("demo15").innerHTML=Math.floor(Math.random() * (5 - 1)) + 1;
+
+//betweeen two numbers 5 included
+document.getElementById("demo16").innerHTML=Math.floor(Math.random()*(6-1))+1;
+
+
+
+
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task Date</title>
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		// Friend object
+		let friend = {
+			name: "Arya",
+			birthDate: "2002-05-07"
+		};
+
+		// Function to get birthday details
+		function getBirthdayDetails(friend) {
+			// Convert birthDate string into a Date object
+			let birthDateObj = new Date(friend.birthDate);
+
+			// Extract day, month name, and year
+			let day = birthDateObj.getDate();
+			let monthNames = ["January", "February", "March", "April", "May", "June",
+				"July", "August", "September", "October", "November", "December"];
+			let month = monthNames[birthDateObj.getMonth()];
+			let year = birthDateObj.getFullYear();
+
+			// Calculate age
+			let today = new Date();
+			let age = today.getFullYear() - year;
+			let hasBirthdayPassed = (today.getMonth() > birthDateObj.getMonth()) ||
+									(today.getMonth() === birthDateObj.getMonth() && today.getDate() >= day);
+			if (!hasBirthdayPassed) {
+				age--; // If birthday not yet passed this year
+			}
+
+			// Return formatted string
+			return `${friend.name} was born on ${day} ${month}, ${year} and is ${age} years old.`;
+		}
+
+		// Display the result
+		document.getElementById("demo").innerHTML = getBirthdayDetails(friend);
+	</script>
+</body>
+</html>

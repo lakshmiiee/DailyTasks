@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>queation</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	
+<script>
+	/*Remove extra spaces at the beginning and end of the string.
+
+Convert the entire string to lowercase.
+
+Replace the word "food" with "ambience".
+
+Find and print the position of the word "service".
+
+Finally, convert the string to an array of words and print the array.*/
+
+
+	var feedback = "   I loved the FOOD and the service!   ";
+	var sli=feedback.trim();
+
+	document.getElementById("demo").innerHTML=sli;
+
+	document.getElementById("demo1").innerHTML=sli.toLowerCase();
+
+	var slic=sli.replace("FOOD","ambience");
+	document.getElementById("demo3").innerHTML=slic;
+
+
+	document.getElementById("demo4").innerHTML=slic.indexOf("service")
+
+
+  var output = slic.split(" ");
+  document.getElementById("demo5").innerHTML = output;
+
+ 
+	
+
+	
+
+
+</script>
+</body>
+</html>

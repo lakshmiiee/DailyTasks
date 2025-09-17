@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>display</title>
+	<style>
+		.a{
+			display: table-row;
+			color: green;
+		}
+		.b{
+			display: block;
+			color:blue;
+		}
+		.c{
+			display: inline-block;
+			color: red;
+			background-color: black;
+			height: auto;
+			width: 200px;
+			text-align: center;
+			padding: 5px;
+			border: 2px solid green;
+		}
+		.d{
+			display: flex;
+			background-color: green;
+		}
+
+
+	</style>
+</head>
+<body>
+<p class="a">This is a heading which uses inline as display</p>
+<p class="a">This is inline</p>
+<p class="a">This is inline</p>
+<p class="b">This is a heading which uses block as display</p>
+<p class="b">This is block</p>
+<p class="b">This is block</p>
+
+<p class="a">This is <span class="c">inline block</span></p>
+
+<p class="d">This is flex</p>
+<p class="d" style="display: inline-flex;">This is inline flex</p>
+<p class="d" style="display: inline-table;">This is inline table</p>
+<p class="d" style="display: inline-table;">This is inline table</p>
+
+
+</body>
+</html>

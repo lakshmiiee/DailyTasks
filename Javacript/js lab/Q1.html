@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculator</title>
+</head>
+<body>
+
+	<h1>Simple Calculator</h1>
+	<form>
+		
+		<label>Enter the first number:</label>
+		<input type="text" id="fnum" name=""fnum>
+		
+		<select id="sel">Select the operator
+		<option value="1">+</option>
+		<option value="2">-</option>
+		<option value="3">*</option>
+		<option value="4">/</option>
+		</select>
+
+		<labe>Enter the second number:</labe>
+		<input type="text" id="snum" name="snum">
+		<br><br>
+
+		<button type="button" id="btn" onclick="find()">Result</button>
+	</form>
+	<h2 id="result"></h2>
+	<script>
+		/*Calculator
+Create a simple calculator having functionalities of addition,subtraction,multiplication and division. 
+1.calculator should have 2 input field for first no. and second no. 
+2. dropdown to choose option (+,-,*,/) 
+3. when click a result button output should be displayed in an another text field based on selected option
+
+*/
+		
+		function find(){
+			var a=parseFloat(document.getElementById("fnum").value);
+			var b=parseFloat(document.getElementById("snum").value);
+			var c=document.getElementById("sel").value;
+			var result;
+
+			if(isNaN(a) || isNaN(b)){
+				result="Please Enter valid Numbers"
+			}
+			else{
+
+
+
+			switch (c) {
+			case "1":
+				result=a+b;
+				break;
+
+			case "2":
+				result=a-b;
+				break;
+
+			case "3":
+				result=a*b;
+				break;
+
+			case "4":
+				result = (b !== 0) ? a / b : "Cannot divide by 0";
+				break;
+			}
+		}
+			document.getElementById("result").innerHTML=result;
+
+		}
+
+
+
+
+	</script>
+</body>
+</html>
