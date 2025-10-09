@@ -10,7 +10,7 @@
 -- Include student_id and course_id
 -- Make sure both values must match existing records in the other two tables
 
--- Create students table
+
 CREATE TABLE student (
     student_id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
@@ -18,14 +18,14 @@ CREATE TABLE student (
     PRIMARY KEY (student_id)
 );
 
--- Create courses table
+
 CREATE TABLE course (
     course_id INT NOT NULL AUTO_INCREMENT,
     course_name VARCHAR(100) NOT NULL,
     PRIMARY KEY (course_id)
 );
 
--- Create enrollments table with foreign key constraints
+
 CREATE TABLE enrollments (
     student_id INT NOT NULL,
     course_id INT NOT NULL,

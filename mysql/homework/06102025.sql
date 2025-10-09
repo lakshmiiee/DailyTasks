@@ -12,7 +12,7 @@
 -- Each author and book must have a unique ID.
 -- Each book must be linked to an existing author.
 
--- Create authors table
+
 CREATE TABLE authors (
     author_id INT NOT NULL AUTO_INCREMENT,
     author_name VARCHAR(100) NOT NULL,
@@ -20,7 +20,6 @@ CREATE TABLE authors (
     PRIMARY KEY (author_id)
 );
 
--- Create books table with foreign key constraint
 CREATE TABLE books (
     book_id INT NOT NULL AUTO_INCREMENT,
     book_title VARCHAR(200) NOT NULL,
